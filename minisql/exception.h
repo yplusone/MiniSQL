@@ -1,5 +1,8 @@
 #ifndef _EXCEPTION_H_
 #define _EXCEPTION_H_ 
+#include "API.h"
+#include <exception>
+using namespace std;
 
 #include <exception>
 class BPTreeInnerException : public std::exception {
