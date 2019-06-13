@@ -76,4 +76,6 @@ void getDataFromString(Data& data, string datastring, int type);
 int getAttrIndex(string attrName, Attribute attr);
 
 bool dataCompare(int type, Data data1, Data data2, int relation);
+
+int rightAttr(string attribute_name, Attribute attr);
 #endif

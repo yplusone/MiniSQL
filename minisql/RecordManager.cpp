@@ -130,9 +130,11 @@ int RecordManager::deleteRecord(string table_name){
 	//Index_manager index_manager(table_name);
 	string file_name="./database/data/"+table_name;
 	Attribute attr=catalog_manager.Get_attr(table_name);
-	/*
-	异常检测
-	*/
+	//检测表是否存在
+	if (!catalog_manager.Has_table(table_name)) {
+		throw table_not_exist();
+	}
+
 	int block_num=buffer_manager.getBlockNum(file_name);
 	if(block_num<=0){
 		return 0;
@@ -163,9 +165,11 @@ int RecordManager::deleteRecord(string table_name, vector<Condition> cons){
 	//Index_manager index_manager(table_name);
 	string file_name="./database/data/"+table_name;
 	Attribute attr=catalog_manager.Get_attr(table_name);
-	/*
-	异常检测
-	*/
+	//检测表是否存在
+	if (!catalog_manager.Has_table(table_name)) {
+		throw table_not_exist();
+	}
+
 	int block_num=buffer_manager.getBlockNum(file_name);
 	if(block_num<=0){
 		return 0;
@@ -219,6 +223,10 @@ Table RecordManager::selectRecord(string table_name, vector<Condition> cons){
 	Attribute attr= catalog_manager.Get_attr(table_name);
 	string file_name = "./database/data/" + table_name;
 	Table res(table_name,attr);
+	//检测表是否存在
+	if (!catalog_manager.Has_table(table_name)) {
+		throw table_not_exist();
+	}
 	int block_num=buffer_manager.getBlockNum(file_name);
 	if(block_num<=0){
 		return res;
@@ -300,7 +308,14 @@ bool RecordManager::satisfyCondition(Tuple tuple,vector<Condition> cons,Attribut
 	}
 	return true;
 }
-
+int rightAttr(string attribute_name, Attribute attr) {
+	for (int i = 0; i < attr.num; i++) {
+		if (attribute_name.compare(attr.name[i]) == 0) {
+			return i;
+		}
+	}
+	return -1;
+}
 void getDataFromString(Data& data, string datastring, int type) {
 	stringstream ss;
 	ss << datastring;

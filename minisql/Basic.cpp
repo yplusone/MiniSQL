@@ -32,6 +32,7 @@ Data Tuple::getDataFromAttr(string attrName) {
 		}
 	}
 	if (id == -1) {
+		throw attr_not_exist();
 		return data;
 	}
 	else {

@@ -17,7 +17,7 @@ public:
 	void insert_index(std::string file_path, Data data, int block_id);
 	void delete_index_key(std::string file_path, Data data);
 	void search_range(std::string file_path, Data data1, Data data2, std::vector<int>& values_out);
-	//int find_index(std::string file_path, )
+	//int find_index(std::string file_path,)
 
 private:
 	typedef std::map<std::string, b_plus_tree<int>* > int_map;

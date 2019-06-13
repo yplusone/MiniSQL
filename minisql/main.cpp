@@ -6,6 +6,13 @@
 BufferManager buffer_manager;
 int main() {
 	std::cout << ">>> Welcome to MiniSQL" << std::endl;
+	try {
+
+		throw table_exist();
+	}
+	catch (exception& ex) {
+		ex.what();
+	}
 	while(1){
 		for (int i = 0; i < 10; i++) {
 			Interpreter query;

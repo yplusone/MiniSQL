@@ -36,6 +36,9 @@
     <ClCompile Include="MiniSQL.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="Index_manager.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Basic.h">
@@ -63,6 +66,9 @@
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="exception.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Index_manager.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>

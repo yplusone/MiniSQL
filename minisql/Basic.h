@@ -3,6 +3,7 @@
 #include <iostream>
 #include <vector>
 #include"BufferManager.h"
+#include"exception.h"
 using namespace std;
 
 struct Attribute {

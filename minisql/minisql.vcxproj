@@ -120,6 +120,7 @@
     <ClCompile Include="Basic.cpp" />
     <ClCompile Include="BufferManager.cpp" />
     <ClCompile Include="catalog_manager.cpp" />
+    <ClCompile Include="Index_manager.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="MiniSQL.cpp" />
     <ClCompile Include="RecordManager.cpp" />
@@ -131,6 +132,7 @@
     <ClInclude Include="catalog_manager.h" />
     <ClInclude Include="const.h" />
     <ClInclude Include="exception.h" />
+    <ClInclude Include="Index_manager.h" />
     <ClInclude Include="MiniSQL.h" />
     <ClInclude Include="RecordManager.h" />
     <ClInclude Include="Tree_node.h" />

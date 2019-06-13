@@ -70,8 +70,18 @@ private:
 	const char *ptr;
 };
 
-class attribute_not_exist : public std::exception {
-    
+class attr_not_exist : public std::exception {
+public:
+	explicit attr_not_exist(const char *ptr = "The attribute is not exist!")
+		: ptr(ptr) {}
+
+	char const *what() const noexcept override {
+		std::cout << this->ptr << std::endl;
+		return ptr;
+	}
+
+private:
+	const char *ptr;
 };
 
 class index_exist : public std::exception {

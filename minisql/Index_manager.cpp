@@ -1,4 +1,4 @@
-Ôªø#include "Index_manager.h"
+#include "Index_manager.h"
 #include"Const.h"
 #include"Basic.h"
 #include"buffer_manager.h"
@@ -6,16 +6,16 @@
 #include<string>
 #include<vector>
 
-Index_manager::index_manager(std::string name) {
+Index_manager::Index_manager(std::string name) {
 	Catalog_manager Catalog;
 	Attribute attr = Catalog.Get_attr(name);
 	for (int i = 0; i < attr.num; i++) {
-		if (attr.has_index[i])
+		if(attr.has_index[i]) 
 			create_index("INDEX_FILE_" + attr.name[i] + "_" + name, attr.type[i]);
 	}
 }
 
-Index_manager::~index_manager() {
+Index_manager::~Index_manager() {
 	for (auto temp : _int_map) {
 		if (temp.second) {
 			temp.second->write_all_disk();
@@ -39,7 +39,7 @@ Index_manager::~index_manager() {
 	}
 }
 
-void index_manager::create_index(std::string file_path, int type) {
+void Index_manager::create_index(std::string file_path, int type) {
 	auto key_size = calc_key_size(type);
 	const auto degree = calc_degree(type);
 
@@ -61,7 +61,7 @@ void index_manager::create_index(std::string file_path, int type) {
 		auto ptr_to_tree = new b_plus_tree<std::string>(file_path, degree);
 		_string_map.insert(string_map::value_type(file_path, ptr_to_tree));
 	}
-	// valid type √é√û√ê¬ß√Ä√†√ê√ç
+	// valid type Œﬁ–ß¿‡–Õ
 	else
 	{
 		std::cout << "Error in create_index ! valid type." << std::endl;
@@ -69,7 +69,7 @@ void index_manager::create_index(std::string file_path, int type) {
 	}
 }
 
-bool index_manager::drop_index(int& index, std::string file_path, int type)
+bool Index_manager::drop_index(int& index, std::string file_path, int type)
 {
 	if (type == int_type)
 	{
@@ -111,7 +111,7 @@ bool index_manager::drop_index(int& index, std::string file_path, int type)
 	return false;
 }
 
-bool index_manager::find_index(int&index, std::string file_path, Data data)
+bool Index_manager::find_index(int&index, std::string file_path, Data data)
 {
 	if (data.type == int_type)
 	{
@@ -150,7 +150,7 @@ bool index_manager::find_index(int&index, std::string file_path, Data data)
 	return false;
 }
 
-void index_manager::insert_index(std::string file_path, Data data, int block_id)
+void Index_manager::insert_index(std::string file_path, Data data, int block_id)
 {
 	if (data.type == int_type)
 	{
@@ -187,7 +187,7 @@ void index_manager::insert_index(std::string file_path, Data data, int block_id)
 
 }
 
-void index_manager::delete_index(std::string file_path, Data data)
+void Index_manager::delete_index(std::string file_path, Data data)
 {
 
 	if (data.type == int_type)
@@ -222,7 +222,7 @@ void index_manager::delete_index(std::string file_path, Data data)
 	}
 	std::cout << "Error! invalid type " << std::endl;
 }
-void index_manager::search_range(std::string file_path, Data data1, Data data2, std::vector<int>& values_out)
+void Index_manager::search_range(std::string file_path, Data data1, Data data2, std::vector<int>& values_out)
 {
 	int flag = 0;
 	if (data1.type == -2)
@@ -236,7 +236,7 @@ void index_manager::search_range(std::string file_path, Data data1, Data data2, 
 
 	if (data1.type != data2.type)
 	{
-		std::cout << "Error in search_range index_manager.cpp! data type not same" << std::endl;
+		std::cout << "Error in search_range Index_manager.cpp! data type not same" << std::endl;
 		exit(1);
 	}
 
@@ -274,7 +274,7 @@ void index_manager::search_range(std::string file_path, Data data1, Data data2, 
 }
 
 
-int index_manager::calc_degree(int type)
+int Index_manager::calc_degree(int type)
 {
 	int degree = (Pagesize - sizeof(int)) / (calc_key_size((type)+sizeof(int)));
 	return degree;
@@ -283,7 +283,7 @@ int index_manager::calc_degree(int type)
 }
 
 
-int index_manager::calc_key_size(int type)
+int Index_manager::calc_key_size(int type)
 {
 	if (type == int_type)
 		return sizeof(int);
