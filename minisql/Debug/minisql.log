@@ -1,0 +1,59 @@
+﻿  API.cpp
+d:\aaaaooooo\vscode\minisql\minisql\basic.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+d:\aaaaooooo\vscode\minisql\minisql\buffermanager.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+d:\aaaaooooo\vscode\minisql\minisql\const.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+d:\aaaaooooo\vscode\minisql\minisql\recordmanager.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  Basic.cpp
+d:\aaaaooooo\vscode\minisql\minisql\basic.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+d:\aaaaooooo\vscode\minisql\minisql\buffermanager.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+d:\aaaaooooo\vscode\minisql\minisql\const.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  BufferManager.cpp
+d:\aaaaooooo\vscode\minisql\minisql\buffermanager.cpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+d:\aaaaooooo\vscode\minisql\minisql\buffermanager.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+d:\aaaaooooo\vscode\minisql\minisql\const.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+d:\aaaaooooo\vscode\minisql\minisql\buffermanager.cpp(3): warning C4083: 应输入“newline”；找到标识符“锛”
+  MiniSQL.cpp
+d:\aaaaooooo\vscode\minisql\minisql\basic.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+d:\aaaaooooo\vscode\minisql\minisql\buffermanager.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+d:\aaaaooooo\vscode\minisql\minisql\const.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+d:\aaaaooooo\vscode\minisql\minisql\recordmanager.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+d:\aaaaooooo\vscode\minisql\minisql\minisql.cpp(30): warning C4018: “<”: 有符号/无符号不匹配
+d:\aaaaooooo\vscode\minisql\minisql\minisql.cpp(78): warning C4390: “;”: 找到空的受控语句；这是否是有意的?
+d:\aaaaooooo\vscode\minisql\minisql\minisql.cpp(294): warning C4018: “>”: 有符号/无符号不匹配
+d:\aaaaooooo\vscode\minisql\minisql\minisql.cpp(454): warning C4244: “初始化”: 从“float”转换到“int”，可能丢失数据
+  RecordManager.cpp
+d:\aaaaooooo\vscode\minisql\minisql\recordmanager.cpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+d:\aaaaooooo\vscode\minisql\minisql\recordmanager.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+d:\aaaaooooo\vscode\minisql\minisql\basic.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+d:\aaaaooooo\vscode\minisql\minisql\buffermanager.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+d:\aaaaooooo\vscode\minisql\minisql\const.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+d:\aaaaooooo\vscode\minisql\minisql\recordmanager.cpp(3): warning C4083: 应输入“newline”；找到标识符“锛”
+d:\aaaaooooo\vscode\minisql\minisql\recordmanager.cpp(69): warning C4018: “<”: 有符号/无符号不匹配
+d:\aaaaooooo\vscode\minisql\minisql\recordmanager.cpp(108): warning C4018: “<”: 有符号/无符号不匹配
+d:\aaaaooooo\vscode\minisql\minisql\recordmanager.cpp(145): warning C4018: “<”: 有符号/无符号不匹配
+d:\aaaaooooo\vscode\minisql\minisql\recordmanager.cpp(178): warning C4018: “<”: 有符号/无符号不匹配
+d:\aaaaooooo\vscode\minisql\minisql\recordmanager.cpp(209): warning C4018: “<”: 有符号/无符号不匹配
+d:\aaaaooooo\vscode\minisql\minisql\recordmanager.cpp(229): warning C4018: “<”: 有符号/无符号不匹配
+d:\aaaaooooo\vscode\minisql\minisql\recordmanager.cpp(294): warning C4018: “<”: 有符号/无符号不匹配
+d:\aaaaooooo\vscode\minisql\minisql\recordmanager.cpp(436): warning C4018: “<”: 有符号/无符号不匹配
+d:\aaaaooooo\vscode\minisql\minisql\recordmanager.h(68): warning C4018: “<”: 有符号/无符号不匹配
+  d:\aaaaooooo\vscode\minisql\minisql\recordmanager.cpp(112): note: 参见对正在编译的函数 模板 实例化“void copyString<int>(char *,int &,T)”的引用
+          with
+          [
+              T=int
+          ]
+  catalog_manager.cpp
+d:\aaaaooooo\vscode\minisql\minisql\buffermanager.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+d:\aaaaooooo\vscode\minisql\minisql\const.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+d:\aaaaooooo\vscode\minisql\minisql\basic.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+d:\aaaaooooo\vscode\minisql\minisql\catalog_manager.cpp(2): warning C4083: 应输入“newline”；找到标识符“；”
+d:\aaaaooooo\vscode\minisql\minisql\catalog_manager.cpp(211): warning C4018: “>”: 有符号/无符号不匹配
+d:\aaaaooooo\vscode\minisql\minisql\catalog_manager.cpp(248): warning C4018: “>”: 有符号/无符号不匹配
+d:\aaaaooooo\vscode\minisql\minisql\catalog_manager.cpp(299): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+  main.cpp
+d:\aaaaooooo\vscode\minisql\minisql\basic.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+d:\aaaaooooo\vscode\minisql\minisql\buffermanager.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+d:\aaaaooooo\vscode\minisql\minisql\const.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+d:\aaaaooooo\vscode\minisql\minisql\recordmanager.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  正在生成代码...
+  minisql.vcxproj -> D:\aaaaooooo\vscode\minisql\Debug\minisql.exe
